@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/markhuge/js-cycle-array",
   "devDependencies": {
-    "tape": "^3.5.0"
+    "tape": "3.5.0"
   }
 }
