@@ -1,19 +1,26 @@
 {
   "name": "cycle-array",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Cycle through array values",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "undefined"
+    "test": "node test"
   },
   "keywords": [
     "utility",
     "array"
   ],
-  "author": "Mark Wilkerson",
-  "license": "MIT"
+  "author": "Mark Wilkerson <mark@segfawlt.net>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markhuge/js-cycle-array.git"
+  },
+  "bugs": {
+    "url": "https://github.com/markhuge/js-cycle-array/issues"
+  },
+  "homepage": "https://github.com/markhuge/js-cycle-array",
+  "devDependencies": {
+    "tape": "^3.5.0"
+  }
 }
