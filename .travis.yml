@@ -4,8 +4,9 @@ node_js:
 - '0.12'
 - '0.10'
 - '0.8'
+after_success: tar zcvf cycle-array-$TRAVIS_BRNCH.tar.gz package.json node_modules/ index.js test/
 deploy:
-  provider: npm
+- provider: npm
   email: mark@segfawlt.net
   api_key:
     secure: RtrYmA9HH1uQHLGaqTgz+hck9C1jfutEbBk01t43lY6RDgwv3aJ+w98/cL/TvdmQii+Xws1Jn0BxdFNKLpYnKGzuo5GPBgQ8/3PpnuAi0pZlOzno1RZ0E010djWLzJaooxK3/CFf8edjKvoWdkGaSgBCDFG6TFZNFJ7ch08Xr20=
@@ -14,3 +15,12 @@ deploy:
     repo: markhuge/js-cycle-array
     all_branches: true
     node: 0.12
+- provider: releases
+  skip_cleanup: true
+  api_key: 
+    secure: TfvVBAvn7ba+H5Fzka4hGmD+aaE+2u6vju5gjE9gyVOuiGgZdS33X62lxwoY+EZ3PXbzkmfN21wmhSDR5kGg5Sp/IiCrk52o7OUY1QpOJSWzZ1exN5MGNWBDbVyLjge6fDVib2rY7a9xZg1VYssNcvPN/12ZF9G8HEyGSaS5//k=
+  file: ./cycle-array-$TRAVIS_BRANCH.tar.gz
+  on:
+    repo: markhuge/js-cycle-array
+    tags: true
+    all_branches: true
