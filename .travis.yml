@@ -4,7 +4,7 @@ node_js:
 - '0.12'
 - '0.10'
 - '0.8'
-after_success: tar zcvf cycle-array-$TRAVIS_BRNCH.tar.gz package.json node_modules/ index.js test/
+after_success: tar zcvf cycle-array-$TRAVIS_BRANCH.tar.gz package.json node_modules/ index.js test/
 deploy:
 - provider: npm
   email: mark@segfawlt.net
