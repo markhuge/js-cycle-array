@@ -1,4 +1,4 @@
-# cycle-array [![Build Status](https://travis-ci.org/markhuge/js-cycle-array.svg?branch=master)](https://travis-ci.org/markhuge/js-cycle-array)
+# cycle-array [![Build Status](https://travis-ci.org/markhuge/js-cycle-array.svg)](https://travis-ci.org/markhuge/js-cycle-array)
 > Cycle through array values
 
 # Use Case
